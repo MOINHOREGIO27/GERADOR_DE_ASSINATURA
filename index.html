@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Assinaturas | Moinho Régio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>Gerador de Assinatura de E-mail</h1>
+        <p>Moinho Régio Alimentos S/A | Identidade Visual Institucional</p>
+    </div>
+</header>
+
+<main>
+
+<!-- FORMULÁRIO -->
+
+<section class="panel">
+
+<h2>Dados do colaborador</h2>
+
+<div class="field">
+    <label>Nome completo</label>
+    <input id="name" value="Alexandre Luiz Rodrigues">
+</div>
+
+<div class="field">
+    <label>Cargo / Setor</label>
+    <input id="role" value="Analista de T.I">
+</div>
+
+<div class="field">
+    <label>Telefone</label>
+    <input id="phone" value="(45) 3220-7900">
+</div>
+
+<div class="field">
+    <label>E-mail</label>
+    <input id="email" value="alexandre.luiz@moinhoregio.com">
+</div>
+
+<div class="field">
+    <label>Site</label>
+    <input id="website" value="www.moinhoregio.com.br">
+</div>
+
+<div class="field">
+    <label>Endereço</label>
+    <input id="address" value="Rua D, 1600">
+</div>
+
+<div class="field">
+    <label>Cidade / UF</label>
+    <input id="city" value="Cuiabá - MT">
+</div>
+
+<div class="field">
+    <label>CEP</label>
+    <input id="cep" value="78098-300">
+</div>
+
+<button class="download-button" id="download">
+    ↓ &nbsp; BAIXAR ASSINATURA PNG
+</button>
+
+<p class="note">
+    A assinatura será exportada em PNG com o fundo ilustrado Moinho Régio, em ultra-alta resolução 4K (3840 × 1200 pixels).
+</p>
+
+</section>
+
+<!-- PRÉ-VISUALIZAÇÃO -->
+
+<section class="panel">
+
+<h2>Pré-visualização da assinatura</h2>
+
+<div class="dimensions">
+    RESOLUÇÃO: 3840 × 1200 PX | FORMATO: PNG 4K COM FOTO DE MILHO
+</div>
+
+<div class="preview-wrap">
+    <canvas id="signature" width="3840" height="1200"></canvas>
+</div>
+
+<p class="note">
+    As alterações realizadas nos campos são aplicadas automaticamente à imagem. O selo institucional aparece ampliado ao lado dos contatos.
+</p>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

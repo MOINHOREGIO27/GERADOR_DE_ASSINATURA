@@ -1,0 +1,142 @@
+:root {
+    --brown: #4b170f;
+    --gold: #e5a000;
+    --cream: #fff8e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f6;
+    color: #33231e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(110deg, #42150e, #632719);
+    color: white;
+    padding: 24px;
+}
+
+.header-content {
+    max-width: 1180px;
+    margin: auto;
+}
+
+header h1 {
+    margin: 0 0 6px;
+    font-size: 23px;
+}
+
+header p {
+    margin: 0;
+    color: #f2d9a5;
+    font-size: 13px;
+}
+
+main {
+    max-width: 1180px;
+    margin: 28px auto;
+    padding: 0 18px;
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 22px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e5e1dc;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 8px 25px #24160d0a;
+}
+
+h2 {
+    color: var(--brown);
+    font-size: 17px;
+    margin: 0 0 18px;
+}
+
+.field {
+    margin-bottom: 13px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #51443e;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d8d3ce;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px #f5d58c55;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 13px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-button {
+    width: 100%;
+    background: var(--brown);
+    color: white;
+    margin-top: 10px;
+    transition: .2s;
+}
+
+.download-button:hover {
+    background: #68291d;
+}
+
+.preview-wrap {
+    overflow: auto;
+    padding: 15px;
+    background: #f6f2e9;
+    border: 1px solid #e7dfd1;
+    border-radius: 10px;
+}
+
+canvas {
+    display: block;
+    width: 960px;
+    height: 300px;
+    background: #fffaf0;
+}
+
+.dimensions {
+    font-size: 11px;
+    color: #796d62;
+    margin-bottom: 13px;
+}
+
+.note {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #766c65;
+    margin-top: 15px;
+}
+
+@media(max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
